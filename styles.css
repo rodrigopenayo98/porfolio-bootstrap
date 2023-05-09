@@ -1,0 +1,15 @@
+/* Banner starts here */
+
+.banner {
+  background-image: url(img/header-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right 46px;
+  background-size: contain;
+  height: 844px;
+}
+
+.banner_content_wrapper {
+  width: 64%;
+  min-height: 302px;
+}
+/* Banner ends here */
