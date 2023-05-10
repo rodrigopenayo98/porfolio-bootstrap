@@ -1,0 +1,66 @@
+.banner {
+  background-image: url(img/header-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right 46px;
+  background-size: contain;
+  height: 844px;
+}
+
+.banner-aboutme {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: right 46px;
+  background-size: contain;
+  height: 844px;
+}
+
+.banner_content_wrapper {
+  width: 64%;
+  min-height: 302px;
+}
+
+.btn {
+  color: #396df2;
+  border-color: #396df2;
+  background-color: transparent;
+}
+
+.card-title,
+.modal-title {
+  width: 496px;
+  height: 46px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091e42;
+}
+
+.badge {
+  background-color: #ebebff !important;
+  color: #6070ff;
+}
+
+section.form {
+  min-height: 844px;
+  background: #6070ff url(img/desktop-contact-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.form_content_wrapper {
+  min-height: 577px;
+}
+
+.form_btn {
+  width: 142px;
+  height: 48px;
+  background-color: #ebebff;
+  color: #6070ff;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  border: none;
+  border-radius: 8px;
+}

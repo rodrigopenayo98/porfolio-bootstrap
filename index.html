@@ -4,9 +4,657 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bootstrap Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <h1>Bootstrap Portfolio</h1>
+  <body data-bs-spy="scroll" data-bs-offset="60" data-bs-target="#myNavbar">
+    <!-- Main section starts here -->
+
+    <main class="container-fluid">
+      <!-- Nav starts here -->
+
+      <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="#" class="navbar-brand">My Logo</a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarCollapse"
+          >
+            <div class="navbar-nav">
+              <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+              <a href="#about" class="nav-item nav-link">About</a>
+              <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Nav ends here -->
+
+      <!-- Banner section starts here -->
+
+      <section
+        class="container-fluid banner d-flex justify-content-around align-items-center"
+      >
+        <div
+          class="banner_content_wrapper d-flex flex-column justify-content-between"
+        >
+          <h1 class="banner_content">
+            I’m Alexandra. <br />
+            Glad to see you!
+          </h1>
+          <p class="banner_content">
+            I’m a software developer! I can help you build a product , feature
+            or website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hesitate to
+            contact me.
+          </p>
+          <h4 class="banner_content">LET'S CONNECT</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="index.html"
+                ><img
+                  class="social_icon"
+                  src="img/twitter-icon.svg"
+                  alt="Twitter"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="index.html"
+                ><img
+                  class="social_icon"
+                  src="img/linkedin-icon.svg"
+                  alt="LinkedIn"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="index.html"
+                ><img
+                  class="social_icon"
+                  src="img/social-icon-3.svg"
+                  alt="Social Icon"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="index.html"
+                ><img
+                  class="social_icon"
+                  src="img/social-icon-4.svg"
+                  alt="Social Icon"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="index.html"
+                ><img
+                  class="social_icon"
+                  src="img/social-icon-5.svg"
+                  alt="Social Icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Banner section ends here -->
+      <!-- Cards section start here -->
+
+      <section class="work container-fluid pt-5 pb-5">
+        <!-- Modals section start here -->
+        <div class="modal" id="work_modal_1" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content p-1">
+              <div class="modal-header">
+                <header>
+                  <h5 class="modal-title">Tonic</h5>
+                  <ul class="list-inline mt-3">
+                    <li class="list-inline-item">CANOPY</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">Back End Dev</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">2015</li>
+                  </ul>
+                </header>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <img src="img/img1.jpg" class="img-modal w-100 mt-1 p-3" alt="" />
+              <div class="container modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <p class="text-left">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      <br>
+                      <br>
+                      <br>
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-right">
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item">
+                        <span class="badge rounded-pill bg-secondary">HTML</span>
+                        <span class="badge rounded-pill bg-secondary">CSS</span>
+                        <span class="badge rounded-pill bg-secondary">JavaScript</span>
+                        <span class="badge rounded-pill bg-secondary">Ruby</span>
+                        <span class="badge rounded-pill bg-secondary">Bootstrap</span>
+                      </li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-4">
+                      See live
+                      <img src="img/boton1.png" alt="Icono" width="20" height="20">
+                    </button>
+                    <button type="button" class="btn btn-outline-primary mt-4">
+                      See source
+                      <img src="img/boton2.png" alt="Icono" width="20" height="20">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="work_modal_2" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content p-1">
+              <div class="modal-header">
+                <header>
+                  <h5 class="modal-title">Multi-Post Stories</h5>
+                  <ul class="list-inline mt-3">
+                    <li class="list-inline-item">FACEBOOK</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">Full Stuck Dev</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">2015</li>
+                  </ul>
+                </header>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <img src="img/img2.png" class="img-modal w-100 mt-1 p-3" alt="" />
+              <div class="container modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <p class="text-left">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      <br>
+                      <br>
+                      <br>
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-right">
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item">
+                        <span class="badge rounded-pill bg-secondary">HTML</span>
+                        <span class="badge rounded-pill bg-secondary">CSS</span>
+                        <span class="badge rounded-pill bg-secondary">JavaScript</span>
+                        <span class="badge rounded-pill bg-secondary">Ruby</span>
+                        <span class="badge rounded-pill bg-secondary">Bootstrap</span>
+                      </li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-4">
+                      See live
+                      <img src="img/boton1.png" alt="Icono" width="20" height="20">
+                    </button>
+                    <button type="button" class="btn btn-outline-primary mt-4">
+                      See source
+                      <img src="img/boton2.png" alt="Icono" width="20" height="20">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="work_modal_3" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content p-1">
+              <div class="modal-header">
+                <header>
+                  <h5 class="modal-title">Facebook 360</h5>
+                  <ul class="list-inline mt-3">
+                    <li class="list-inline-item">FACEBOOK</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">Full Stuck Dev</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">2015</li>
+                  </ul>
+                </header>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <img src="img/img3.png" class="img-modal w-100 mt-1 p-3" alt="" />
+              <div class="container modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <p class="text-left">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      <br>
+                      <br>
+                      <br>
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-right">
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item">
+                        <span class="badge rounded-pill bg-secondary">HTML</span>
+                        <span class="badge rounded-pill bg-secondary">CSS</span>
+                        <span class="badge rounded-pill bg-secondary">JavaScript</span>
+                        <span class="badge rounded-pill bg-secondary">Ruby</span>
+                        <span class="badge rounded-pill bg-secondary">Bootstrap</span>
+                      </li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-4">
+                      See live
+                      <img src="img/boton1.png" alt="Icono" width="20" height="20">
+                    </button>
+                    <button type="button" class="btn btn-outline-primary mt-4">
+                      See source
+                      <img src="img/boton2.png" alt="Icono" width="20" height="20">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="work_modal_4" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content p-1">
+              <div class="modal-header">
+                <header>
+                  <h5 class="modal-title">Uber Navigation</h5>
+                  <ul class="list-inline mt-3">
+                    <li class="list-inline-item">Uber</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">Lead Developer</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">2018</li>
+                  </ul>
+                </header>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <img src="img/img4.png" class="img-modal w-100 mt-1 p-3" alt="" />
+              <div class="container modal-body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <p class="text-left">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      <br>
+                      <br>
+                      <br>
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-right">
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item">
+                        <span class="badge rounded-pill bg-secondary">HTML</span>
+                        <span class="badge rounded-pill bg-secondary">CSS</span>
+                        <span class="badge rounded-pill bg-secondary">JavaScript</span>
+                        <span class="badge rounded-pill bg-secondary">Ruby</span>
+                        <span class="badge rounded-pill bg-secondary">Bootstrap</span>
+                      </li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary mt-4">
+                      See live
+                      <img src="img/boton1.png" alt="Icono" width="20" height="20">
+                    </button>
+                    <button type="button" class="btn btn-outline-primary mt-4">
+                      See source
+                      <img src="img/boton2.png" alt="Icono" width="20" height="20">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modals section ends here -->
+        <div
+          class="container"
+          data-bs-toggle="modal"
+          data-bs-target="#work_modal_1"
+        >
+          <div class="card p-3 mb-3">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img
+                  src="img/img1.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Tonic</h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">CANOPY</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">Back End Dev</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">2015</li>
+                  </ul>
+                  <p class="card-text pt-3 pb-3">
+                    A daily selection of privately personalized reads; no accounts <br> 
+                    or sign-ups required.
+                  </p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <span class="badge rounded-pill bg-secondary">html</span>
+                      <span class="badge rounded-pill bg-secondary">css</span>
+                      <span class="badge rounded-pill bg-secondary">javaScript</span>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-outline-primary mt-3 mb-3">
+                    See project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container mt-5"
+          data-bs-toggle="modal"
+          data-bs-target="#work_modal_2"
+        >
+          <div class="card p-3 mb-3">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Multi-Post Stories</h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">FACEBOOK</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">Full Stuck Dev</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">2015</li>
+                  </ul>
+                  <p class="card-text pt-3 pb-3">
+                    Experimental content creation feature that allows users to <br> 
+                    add to an existing story over the course of a day without <br> 
+                    spamming their friends.
+                  </p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <span class="badge rounded-pill bg-secondary">html</span>
+                      <span class="badge rounded-pill bg-secondary">Ruby on rails</span>
+                      <span class="badge rounded-pill bg-secondary">css</span>
+                      <span class="badge rounded-pill bg-secondary">javaScript</span>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-outline-primary mt-3 mb-3">
+                    See project
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="img/img2.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container mt-5"
+          data-bs-toggle="modal"
+          data-bs-target="#work_modal_3"
+        >
+          <div class="card p-3 mb-3">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img
+                  src="img/img3.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Facebook 360</h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">FACEBOOK</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">Full Stuck Dev</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">2015</li>
+                  </ul>
+                  <p class="card-text pt-3 pb-3">
+                    Exploring the future of media in Facebook's first Virtual Reality <br> 
+                    app; a place to discover and enjoy 360 photos and videos on <br> 
+                    Gear VR.
+                  </p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <span class="badge rounded-pill bg-secondary">html</span>
+                      <span class="badge rounded-pill bg-secondary">Ruby on rails</span>
+                      <span class="badge rounded-pill bg-secondary">css</span>
+                      <span class="badge rounded-pill bg-secondary">javaScript</span>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-outline-primary mt-3 mb-3"">
+                    See project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container mt-5"
+          data-bs-toggle="modal"
+          data-bs-target="#work_modal_4"
+        >
+          <div class="card p-3 mb-3">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Uber Navigation</h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">Uber</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">Lead Developer</li>
+                    <img src="img/point.png" alt="" />
+                    <li class="list-inline-item">2018</li>
+                  </ul>
+                  <p class="card-text pt-3 pb-3">
+                    A smart assistant to make driving more safe, efficient, and fun <br>
+                    by unlocking your most expensive computer: your car.
+                  </p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <span class="badge rounded-pill bg-secondary">html</span>
+                      <span class="badge rounded-pill bg-secondary">Ruby on rails</span>
+                      <span class="badge rounded-pill bg-secondary">css</span>
+                      <span class="badge rounded-pill bg-secondary">javaScript</span>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-outline-primary mt-3 mb-3"">
+                    See project
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="img/img4.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Cards section ends here -->
+      <!-- About me section start here -->
+      <section
+        class="container-fluid banner-aboutme d-flex align-items-center mr-5 pr-5 justify-content-end">
+        <div
+          class="row w-100 p-5">
+        <div class="col-md-5">
+          <h1 class="card-title">
+            About Myself
+          </h1>
+          <p class="banner_content">
+            Hello I’m a software developer! I can help you build a <br> product , feature or website Look through some of my <br> 
+            work and experience! If you like what you see and have <br> a project you need coded, don’t hesitate to contact me.
+          </p>
+          <h4 class="banner_content">LET'S CONNECT</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="index.html"
+                ><img
+                  class="social_icon"
+                  src="img/social-icon-4.svg"
+                  alt="Social Icon"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="index.html"
+                ><img
+                  class="social_icon"
+                  src="img/linkedin-icon.svg"
+                  alt="LinkedIn"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="index.html"
+                ><img
+                  class="social_icon"
+                  src="img/social-icon-5.svg"
+                  alt="Social Icon"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="index.html"
+                ><img
+                  class="social_icon"
+                  src="img/twitter-icon.svg"
+                  alt="Twitter"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="index.html"
+                ><img
+                  class="social_icon"
+                  src="img/social-icon-3.svg"
+                  alt="Social Icon"
+              /></a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-outline-primary mt-3 mb-3">
+            Get my resume
+          </button>
+        </div>
+        <div class="col-md-7 d-flex flex-column justify-content-between">
+          <div class="row w-100">
+            <div class="col-md-9 pb-3">
+              <h4>Languages</h4>
+            </div>
+            <div class="col-md-3">
+              <img src="img/arrow-down.png" class="" alt="">
+            </div>
+            <div class="row">
+              <div class="col-sm-2 d-flex flex-column pb-3">
+                <img src="img/jsimg.png" class="w-50" alt="">
+                JavaScript</div>
+              <div class="col-sm-2 d-flex flex-column">
+                <img src="img/htmlimg.png" class="w-50" alt="">
+                HTML</div>
+              <div class="col-sm-2 d-flex flex-column">
+                <img src="img/cssimg.png" class="w-50" alt="">
+                CSS</div>
+            </div>
+            
+          </div>
+        
+          <div class="row w-100">
+            <div class="col-md-9 pb-3">
+              <h4>Frameworks</h4>
+            </div>
+            <div class="col-md-3">
+              <img src="img/arrow-right.png" alt="">
+            </div>
+          </div>
+        
+          <div class="row w-100">
+            <div class="col-md-9">
+              <h4>Skills</h4>
+            </div>
+            <div class="col-md-3">
+              <img src="img/arrow-right.png" alt="">
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- About me section start here -->
+      </section>
+
+      <!-- Form Section starts here -->
+
+      <section class="container-fluid form d-flex align-items-center justify-content-around">
+        <div class="row w-50 form_content_wrapper d-flex flex-column align-items-center">
+          <h3 class="text-center modal-title">Contact me</h3>
+          <p class="text-center">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</p>
+          <form action="" class="d-flex flex-column align-items-center">
+            <input type="text" name="name" class="form-control mb-3" placeholder="Loremipsum">
+            <input type="email" name="email" class="form-control mb-3" placeholder="loremipsum@gmail.com">
+            <textarea name="msg" id="" cols="30" rows="7" class="form-control mb-3"></textarea>
+            <button class="form_btn" type="submit">Get in touch</button>
+          </form>
+        </div>
+      </section>
+      <!-- Form Section ends here -->
+
+      <!-- Main section ends here -->
+    </main>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
