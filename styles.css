@@ -12,21 +12,30 @@
   width: 64%;
   min-height: 302px;
 }
+
 /* Banner ends here */
 
 
-.btn .btn-outline-primary{
-  background-color: #396DF2;
-
+.btn  {
+  color: #396DF2;
+  border-color: #396DF2;
+  background-color: transparent;
 }
 
-.card-title{ 
+.card-title,
+.modal-title {
   width: 496px;
-height: 46px;
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-color: #091E42;
+  height: 46px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091E42;
+}
+
+.badge{
+  background-color: #EBEBFF !important;
+  color: #6070FF;
+  ;
 }
